@@ -72,7 +72,7 @@ async function handleUserCreate() {
     });
     console.log("Customer created successfully:", newCustomer);
   } catch (error) {
-    console.log("Error creating customer:", error);
+    console.error("Error creating customer:", error);
   }
 }
 
@@ -94,7 +94,7 @@ async function handleUserFind() {
       );
     });
   } catch (error) {
-    console.log("Error finding customers:", error);
+    console.error("Error finding customers:", error);
   }
 }
 
